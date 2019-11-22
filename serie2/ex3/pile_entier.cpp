@@ -16,11 +16,16 @@ pile_entier::pile_entier()
     this->taille = 20;
 }
 
+pile_entier::~pile_entier()
+{
+    delete[] this->tab;
+}
+
 void pile_entier::empile(int n)
 {
     if (this->pleine())
     {
-        cout << "La pile est pleine!" << endl;
+        cout << "On peut pas ajouter la valeur " << n << " car la pile est pleine!" << endl;
         return;
     }
     this->tab[index] = n;
@@ -31,9 +36,11 @@ int pile_entier::depile()
     if (this->vide())
     {
         cout << "La pile est vide!" << endl;
-        return;
+        return 0;
     }
-    return this->tab[index--];
+    int val = this->tab[index - 1];
+    this->index--;
+    return val;
 }
 int pile_entier::vide()
 {
