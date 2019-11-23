@@ -13,6 +13,10 @@ public:
     chaine(chaine &);
     void affiche();
     ~chaine();
+    chaine &operator=(chaine &);
+    chaine &operator+(chaine &);
+    int operator==(chaine &);
+    char &operator[](int);
 };
 
 #endif
