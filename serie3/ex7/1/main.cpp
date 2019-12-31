@@ -16,11 +16,13 @@ int main()
 
     int *tmp;
     l.premier();
+    int i = 0;
     while (!l.fini())
     {
         tmp = (int *)l.prochain();
-        cout << *tmp << "\n"
-             << l.fini() << "\n";
+        cout << "Hmmm\n";
+        if (tmp)
+            cout << *tmp << " " << i++ << "\n";
     }
     return 0;
 }

@@ -35,11 +35,11 @@ public:
     {
         void *tmp = index->contenu;
         index = index->suivant;
+        cout << "Dazet\n";
         return tmp;
     }
     int fini()
     {
-        // TODO: this doesnt work perfectly.
-        return index->contenu == nullptr;
+        return index->suivant == nullptr;
     }
 };
