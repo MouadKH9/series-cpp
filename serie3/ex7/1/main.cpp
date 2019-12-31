@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int *a, *b, *c;
+    int *a = new int, *b = new int, *c = new int;
     *a = 1;
     *b = 2;
     *c = 3;
@@ -15,11 +15,12 @@ int main()
     l.ajoute(c);
 
     int *tmp;
+    l.premier();
     while (!l.fini())
     {
         tmp = (int *)l.prochain();
-        cout << *tmp << "\n";
+        cout << *tmp << "\n"
+             << l.fini() << "\n";
     }
-
     return 0;
 }

@@ -28,7 +28,7 @@ public:
     }
     void *premier()
     {
-        index = debut->suivant;
+        index = debut;
         return debut->contenu;
     }
     void *prochain()
@@ -39,6 +39,7 @@ public:
     }
     int fini()
     {
-        return index == NULL;
+        // TODO: this doesnt work perfectly.
+        return index->contenu == nullptr;
     }
 };
