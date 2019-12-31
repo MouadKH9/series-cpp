@@ -2,7 +2,7 @@
 
 using namespace std;
 
-template <typename T1, typename T2>
+template <class T1, class T2>
 class vect
 {
 private:
