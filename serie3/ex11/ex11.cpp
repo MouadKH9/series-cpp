@@ -4,9 +4,9 @@ using namespace std;
 template <class T, class U>
 T fct(T a, U b, T c)
 {
-    cout << a << "\n"
-         << b << "\n"
-         << c << "\n";
+    // cout << a << "\n"
+    //      << b << "\n"
+    //      << c << "\n";
 }
 
 int main()
