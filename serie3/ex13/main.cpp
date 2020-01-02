@@ -1,5 +1,5 @@
 #include <iostream>
-#include "essai.h"
+#include "ex13.h"
 
 using namespace std;
 
@@ -9,6 +9,6 @@ int main()
     int p = 5;
 
     essai<int, 10> ei(3);
-    essai<float, n> ef(0.0);
+    //essai<float, n> ef(0.0);
     return 0;
 }

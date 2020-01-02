@@ -1,11 +1,12 @@
+//ON N'EST PAS VRAIMENT BESION DE CELLA
+
 #include <iostream>
-#include "essai.h"
 
 using namespace std;
 
 const int n = 3;
 int p = 5;
-// Classe I :
+// Classe I cas 1:
 class essai
 {
     int tab[10];
@@ -22,22 +23,22 @@ essai ::essai(int a)
     }
 }
 
-// Classe I :
-class essai
-{
-    int tab[n];
+// Classe I  cas 2:
+// class essai
+// {
+//     int tab[n];
 
-public:
-    essai(int);
-};
+// public:
+//     essai(int);
+// };
 
-essai ::essai(int a)
-{
-    for (int i = 0; i < n; i++)
-    {
-        tab[i] = a;
-    }
-}
+// essai ::essai(int a)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         tab[i] = a;
+//     }
+// }
 
 //Classe III :
 // Declaration incorrecte car p n'est pas declaree comme constante
